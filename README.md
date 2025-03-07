@@ -21,3 +21,6 @@ A skincare website built with React, Node.js, and MongoDB.
    ```bash
    git clone https://github.com/Samyukthaa18/skincare-decoder.git
    cd skincare-decoder
+## Backend MongoDB Atlas
+I have used Mongo DB Atlas and is connected using String connection to my cluster. 
+Please change the  .env file accordingly

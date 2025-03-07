@@ -1,0 +1,104 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.brand a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2a2a2a;
+  text-decoration: none;
+}
+
+.navLinks {
+  display: flex;
+  gap: 2rem;
+  margin-right: auto;
+  margin-left: 2rem;
+}
+
+.navLinks a {
+  color: #4a4a4a;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navLinks a:hover {
+  color: #007bff;
+}
+
+.accountMenu {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: relative; 
+}
+
+.accountIcon {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+/* Modal styles */
+.modal {
+  position: absolute;
+  top: 100%; 
+  right: 0; 
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 1rem;
+  min-width: 160px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000; 
+}
+
+.userInfo {
+  margin-bottom: 1rem;
+}
+
+.userInfo span {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #2a2a2a;
+}
+
+.modalButton {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  background: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.modalButton:hover {
+  background: #0056b3;
+}
+
+.logoutButton {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  background: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.logoutButton:hover {
+  background: #a71d2a;
+}

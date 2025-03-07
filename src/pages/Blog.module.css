@@ -1,0 +1,160 @@
+/* Blog page styles */
+.blog {
+  padding: 40px 20px;
+  background-color: #ffff;
+  max-width: 1200px; 
+  margin: 0 auto;
+}
+
+.blog h1 {
+  text-align: center;
+  color: #090606;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: 600; 
+}
+
+.blogPostsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  gap: 20px; 
+}
+
+.blogPost {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  overflow: hidden; 
+}
+
+.blogPost:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+Copy
+.modalContent {
+  color: #f7f4f4; 
+  font-size: 1rem;
+  line-height: 1.8;
+  max-height: 60vh; 
+  overflow-y: auto; 
+  padding-right: 10px; 
+}
+
+.blogPost h2 {
+  color: #161211; 
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: 600; 
+}
+
+.blogPost p {
+  color: #666666; 
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.blogPostDate {
+  color: #999999; 
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+/* Modal styles */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; 
+}
+
+.modal {
+  background-color: #fffcfc;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 800px; 
+  width: 90%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  position: relative;
+  animation: fadeIn 0.3s ease; 
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.modal h2 {
+  color: #080606; 
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center; 
+}
+
+.modalContent {
+  color: #000000; 
+  font-size: 1rem;
+  line-height: 1.8;
+  max-height: 60vh; 
+  overflow-y: auto; 
+  padding-right: 10px; 
+}
+
+.modalContent p {
+  margin-bottom: 15px; 
+}
+
+.modalContent ul {
+  list-style-type: disc; 
+  padding-left: 20px; 
+  margin-bottom: 15px; 
+}
+
+.modalContent li {
+  margin-bottom: 10px; 
+}
+
+.modal button {
+  background-color: #a92c06;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s ease;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.modal button:hover {
+  background-color: #ff6347; 
+}
+
+.blogbg {
+  background-image: url('../assets/blogs.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  color: #070606; 
+  min-height: 100vh; 
+  padding: 20px; 
+}

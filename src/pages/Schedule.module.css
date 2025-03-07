@@ -1,0 +1,164 @@
+.container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cycleIndicator {
+  background: #007bff;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 2rem 0;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.scheduleTable {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem; 
+}
+
+.scheduleTable th,
+.scheduleTable td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer; 
+}
+
+.scheduleTable th {
+  background: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+.scheduleTable tbody tr:hover {
+  background: #f8f9fa;
+}
+
+.scheduleTable .currentDay {
+  background: #e3f2fd; 
+}
+
+.scheduleTable ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.scheduleTable li {
+  padding: 0.5rem 0;
+  color: #333;
+}
+
+.emailButtonContainer {
+  text-align: center;
+  margin-top: 2rem; 
+  margin-bottom: 4rem; 
+}
+
+.emailButton {
+  background: #28a745;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.emailButton:disabled {
+  background: #6c757d; 
+  cursor: not-allowed;
+}
+
+.emailButton:hover:not(:disabled) {
+  background: #218838;
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 90%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.routineSection {
+  margin-bottom: 1.5rem;
+}
+
+.routineSection h4 {
+  color: #007bff;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.routineSection ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.routineSection li {
+  background: #f8f9fa;
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.closeButton {
+  background: #dc3545;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+  margin-top: 1rem;
+}
+
+.closeButton:hover {
+  background: #a71d2a;
+}
+
+.loading {
+  text-align: center;
+  padding: 3rem;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.error {
+  text-align: center;
+  padding: 3rem;
+  font-size: 1.2rem;
+  color: #dc3545;
+}
